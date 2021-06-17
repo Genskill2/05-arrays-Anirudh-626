@@ -1,9 +1,8 @@
 /* Enter your solutions in this file */
 #include <stdio.h>
-#include<limits.h>
 
 int max(const int arr[],int n){
-	int Max=0;
+	int Max=arr[0];
 	for(int i=0;i<n;i++){
 		if(arr[i]>Max){
 			Max=arr[i];
@@ -13,7 +12,7 @@ int max(const int arr[],int n){
 }
 
 int min(const int arr[],int n){
-	int Min=INT_MAX;
+	int Min=arr[0];
 	for(int i=0;i<n;i++){
 		if(arr[i]<Min){
 			Min=arr[i];
@@ -23,7 +22,7 @@ int min(const int arr[],int n){
 }
 
 float average(const int arr[],int n){
-	float sum=0;
+	float sum=0.0;
 	for(int i=0;i<n;i++){
 		sum+=arr[i];
 	}
